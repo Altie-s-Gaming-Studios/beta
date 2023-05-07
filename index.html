@@ -18,11 +18,28 @@
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="imgs/AltiesGamingLogo.png">
     <!-- extra css -->
-    <!--extra JS-->
+    <link rel="stylesheet" href="CSS/welcome.css">
+    <!-- extra JS -->
+    <script src="JS/welcome.js"></script>
   </head>
   <body class="bg-secondary ">
-    <div class="p-3 bg-info text-center"> <!--set pack to p-5 when done updating-->
-      <h1>Altie's Gaming Studios</h1>
+    <div class="p-3 bg-dark text-info text-center"> <!--set pack to p-5 when done updating-->
+      <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140" />
+          </filter>
+        </defs>
+      </svg>
     </div>
     <div class="alert alert-danger text-center"><!--replace with <br> when done updating-->
       We are updating our sites to use Bootstrap, some sites may be down
