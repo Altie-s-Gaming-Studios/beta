@@ -1,0 +1,58 @@
+@import "https://fonts.googleapis.com/css?family=Orbitron";
+@import "https://fonts.googleapis.com/css?family=Audiowide";
+body{
+    background-color:LightSlateGray;
+    margin:0 auto;min-height:700px;
+    position:relative;width:auto;
+    text-align:center;
+    font-family:audiowide,serif;
+}
+.header{
+    font-family:orbitron,serif;
+    background-color:DarkSlateGray;
+    text-align:center;width:99.6%;
+    border:2px solid #333;
+}
+.important{
+    border-radius:25px;
+    background:maroon;
+    padding:20px;width:50%;
+    height:auto;
+    border:2px solid #333;
+}
+.ESRBRating{
+    font-size:10px;
+}
+table{
+    background-color:DarkSlateGray;
+    width:auto;
+}
+.grid{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap:50px;
+}
+.item1{
+    grid-row:1/span 3;
+    border-radius:25px;
+    background:DarkSlateGray;
+    padding:20px;
+    width:auto;
+    height:auto;
+    border:2px solid #333;
+}
+.about{
+    border-radius:25px;
+    background:DarkSlateGray;
+    padding:20px;width:auto;
+    height:auto;
+    border:2px solid #333;
+}
+.footer{
+    border:2px solid #333;
+    background-color:#333;
+    text-align:center;
+    width:99.6%;
+    bottom:0 auto;
+    color:DarkTurquoise;
+}

@@ -1,0 +1,50 @@
+body {
+    background-color: mediumaquamarine;
+}
+
+.content {
+    margin: 0px auto;
+    min-height: 700px;
+    position: relative;
+    width: auto;
+}
+
+/* Header */
+.header {
+    background-color: mediumseagreen;
+    text-align:center;
+    width: 99.6%;
+    border: 2px solid #333;
+}
+
+.important {
+    border-radius: 25px;
+    background: maroon;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+table {
+    background-color: mediumseagreen;
+    width: auto;
+  }
+
+.about {
+    border-radius: 25px;
+    background: mediumseagreen;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+.footer {
+    border: 2px solid #333;
+    background-color: #333;
+    text-align: center;
+    width: 99.6%;
+    bottom: 0 auto;
+    color: #a6f5db;
+}

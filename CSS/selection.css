@@ -1,0 +1,77 @@
+/* Split the screen in half */
+.split {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .tleft {
+    top: 0;
+    left: 0;
+    background-color: darkslategray;
+  }
+  
+  /* Control the right side */
+  .tright {
+    top: 0;
+    right: 0;
+    background-color: mediumaquamarine;
+  }
+  
+    /* Control the left side */
+    .lleft {
+      bottom: 0;
+      left: 0;
+      background-color: #c166a8;
+    }
+    
+    /* Control the right side */
+    .lright {
+      bottom: 0;
+      right: 0;
+      background-color: LightSlateGray;
+    }
+
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed  */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  /* Link Coloration */
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
