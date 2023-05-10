@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	  "Altie's",
 	  "Gaming",
 	  "Studios!",
+	  "",
 	  "Enjoy",
 	  "Your",
 	  "Stay!",
+	  ""
 	];
 	const morphTime = 1;
 	const cooldownTime = 0.25;

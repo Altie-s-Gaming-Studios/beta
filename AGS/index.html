@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
     <head>
         <title>Altie's Gaming Studios</title>
         <!--Font Awsome-->
@@ -23,23 +23,27 @@
         <!--Favicon-->
         <link rel="icon" type="image/x-icon" href="../imgs/AltiesGamingLogo.png">
         <!--AGS JS-->
+        <!--<script src="../JS/subs.js"></script>--><!--Disabled for testing the site-->
         <!-- extra css -->
         <style>
             .btn-youtube {
                 background-color: #FF0000;
                 color: #FFFFFF;
             }
+            .btn-twitch {
+              background-color: rgb(145, 70, 255);
+            }
         </style>
         <!--extra JS-->
       </head>
-      <body class="bg-secondary text-light">
+      <body>
 
-        <div class="p-3 bg-info text-dark text-center">
+        <div class="p-3 bg-info-subtle text-info text-center">
           <h1>Altie's Gaming Studios</h1>
           <p>New Videos Every 2 Weeks!</p> 
         </div>
         
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-dark-subtle navbar-dark">
           <div class="container-fluid">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -67,7 +71,7 @@
             </ul>
           </div>
         </nav>
-        <div class="alert alert-danger text-center">
+        <div class="container alert alert-danger text-center">
             We are updating our sites to use Bootstrap and look better, this means some sites may be down
           </div>
         <div class="container mt-5">
@@ -89,7 +93,7 @@
                   </li>
               </ul>
               <hr class="d-sm-none">
-              <div class="ratio ratio-1x1">
+              <div class="ratio ratio-1x1 clearfix">
                 <iframe src="https://ptb.discord.com/widget?id=757341031741128802&theme=dark" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
             </div>
@@ -102,99 +106,100 @@
               <h2 class="mt-5">Channels</h2>
               <h5>All of these channels are owned by AGS</h5>
               <p>For partnered channels (edited/ran by us or FYTS) check the Partners page</p>
-              <table class="table table-dark table-hover table-bordered">
-                <thead>
-                    <tr>
-                        <td>Channel Name <span class="badge rounded-pill bg-danger float-end">sub count</span></td>
-                        <td>Channel disc</td>
-                        <td>To the Channel</td>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td>Altie's Gaming <span class="badge rounded-pill bg-danger float-end" id="ag"><div class="g-ytsubscribe" data-channelid="UC9RA0TJNGmiMcyFYkhvKrtg" data-layout="default" data-theme="dark" data-count="default"></div></span></td>
-                        <td>Main Channel, Mostly Minecraft Content</td>
-                        <td>
-                            <div class="btn-group float-end" role="group">
-                                <a class="btn btn-info">Page</a>
-                                <a class="btn btn-youtube" href="https://www.youtube.com/@altiesgaming">YouTube</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Altie's Gaming Infinite <span class="badge rounded-pill bg-danger float-end" id="agi"><div class="g-ytsubscribe" data-channelid="UCDdNM3GzfcJ2rix0WfUeJ3A" data-layout="default" data-theme="dark" data-count="default"></div></span></td>
-                        <td>Second Channel, All of Gaming</td>
-                        <td>
-                            <div class="btn-group float-end" role="group">
-                                <a class="btn btn-info">Page</a>
-                                <a class="btn btn-youtube" href="https://www.youtube.com/@altiesgamingInfinite">YouTube</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Altie's Gaming Live <span class="badge rounded-pill bg-danger float-end" id="agl"><div class="g-ytsubscribe" data-channelid="UCeIyX6udwdsbDLwdAvfHQAg" data-layout="default" data-theme="dark" data-count="default"></div></span></td>
-                        <td>Third Channel, Live Stream and misc. channel</td>
-                        <td>
-                            <div class="btn-group float-end" role="group">
-                                <a class="btn btn-info">Page</a>
-                                <a class="btn btn-youtube" href="https://www.youtube.com/@altiesgaminglive">YouTube</a>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-secondary">
+                  <div class="row">
+                    <div class="col-4">Channel <span class=" top-0 float-end badge rounded-pill bg-danger">Sub Count</span></div>
+                    <div class="col-4">Channel disc</div>
+                    <div class="col-4">To the Channel</div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                  <div class="row">
+                    <div class="col-4">Altie's Gaming <span class=" top-0 float-end badge rounded-pill bg-danger" id="AGsubs">API Unavailable</span></div>
+                    <div class="col-4">Main Channel, Mostly Minecraft Content</div>
+                    <div class="col-4">
+                      <div class="btn-group" role="group">
+                        <a class="btn btn-info" href="AltiesGaming.html">Page</a>
+                        <a class="btn btn-dark">|</a>
+                        <a class="btn btn-youtube" href="https://www.youtube.com/@altiesgaming">YouTube</a>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                  <div class="row">
+                    <div class="col-4">Altie's Gaming Infinite <span class=" top-0 float-end badge rounded-pill bg-danger" id="AGIsubs">API Unavailable</span></div>
+                    <div class="col-4">Second Channel, All of Gaming</div>
+                    <div class="col-4">
+                      <div class="btn-group" role="group">
+                        <a class="btn btn-info" href="AltiesGamingInfinite.html">Page</a>
+                        <a class="btn btn-dark">|</a>
+                        <a class="btn btn-youtube" href="https://www.youtube.com/@altiesgamingInfinite">YouTube</a>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  <div class="row">
+                    <div class="col-4">Altie's Gaming Live <span class=" top-0 float-end badge rounded-pill bg-danger" id="AGLsubs">API Unavailable</span></div>
+                    <div class="col-4">Third Channel, Live Stream and misc. channel</div>
+                    <div class="col-4">
+                      <div class="btn-group" role="group">
+                        <a class="btn btn-info" href="AltiesGamingLive.html">Page</a>
+                        <a class="btn btn-dark">|</a>
+                        <a class="btn btn-youtube" href="https://www.youtube.com/@altiesgaminglive">YouTube</a>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-secondary">
+                  <div class="row">
+                    <div class="col-4">Altie's Gaming Twitch</div>
+                    <div class="col-4">Twitch, all games and some coding, all vods to to Altie's Gaming Live</div>
+                    <div class="col-4">
+                      <div class="btn-group" role="group">
+                        <a class="btn btn-info" href="AltiesGamingLive.html">Page</a>
+                        <a class="btn btn-dark">|</a>
+                        <a class="btn btn-twitch" href="https://www.twitch.tv/altiesgaming"><img src="../Brands\twitch-brand-assets\Brand Assets\Logos\wordmark\Extruded Wordmark (Primary Logo)\Black Ops/TwitchExtrudedWordmarkBlackOps.png" class="mx-auto d-block" height="40px" style="margin: 20px;"></a>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
           </div>
         </div>
         </div>
         <br>
-        <div class="container-fluid text-center text-bg-dark bg-gradient" id="video-container">
-            <!--<h2>Newest Videos</h2>
-            <div class="row">
-              <div class="col">
-                <h4>Altie's Gaming</h4>
-                <div class="video ratio ratio-16x9">
-                    <iframe class="video-iframe" src="" allowfullscreen data-channel="UC9RA0TJNGmiMcyFYkhvKrtg"></iframe>
-                </div>
-              </div>
-              <div class="col">
-                <h4>Altie's Gaming Infinite</h4>
-                <div class="video ratio ratio-16x9">
-                    <iframe class="video-iframe" src="" allowfullscreen data-channel="UCDdNM3GzfcJ2rix0WfUeJ3A"></iframe>
-                </div>
-              </div>
-              <div class="col">
-                <h4>Altie's Gaming Live</h4>
-                <div class="video ratio ratio-16x9">
-                    <iframe class="video-iframe" src="" fallowfullscreen data-channel="UCeIyX6udwdsbDLwdAvfHQAg"></iframe>
-                  </div>
-              </div>
-            </div>
-            <br>
-            <br>-->
+        <div class="container-fluid text-center">
             <h2>Recomended Videos</h2>
             <div class="row">
               <div class="col">
                 <h4>Altie's Gaming</h4>
-                <div class="video ratio ratio-16x9">
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/FZK13YrjThA" allowfullscreen></iframe>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/FZK13YrjThA" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col">
                 <h4>Altie's Gaming Infinite</h4>
-                <div class="video ratio ratio-16x9">
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/iWxVwVXc-QQ" allowfullscreen></iframe>
+                <div class=" ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/iWxVwVXc-QQ" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col">
                 <h4>Altie's Gaming Live</h4>
-                <div class="video ratio ratio-16x9">
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/oN6P3SueMkM" fallowfullscreen></iframe>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/oN6P3SueMkM" fallowfullscreen></iframe>
                   </div>
               </div>
             </div>
         </div>
-        <div class="container-fluid p-4 bg-dark text-white text-center">
-            <p>Footer</p>
+        <br>
+        <div class="container-fluid p-4 bg-dark-subtle text-center">
+            <p>Made by Altie's Gaming Studios</p>
+            <p>Designed by Altie's Design Studios</p>
+            <br>
+            <p>Twitch Purple, Black Ops, Ice</p> are all trademarked
         </div>
         </body>
 </html>
