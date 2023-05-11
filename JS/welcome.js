@@ -9,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	  "Altie's",
 	  "Gaming",
 	  "Studios!",
-	  "",
-	  "Enjoy",
-	  "Your",
-	  "Stay!",
 	  ""
 	];
 	const morphTime = 1;
