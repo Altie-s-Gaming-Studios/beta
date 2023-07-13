@@ -1,0 +1,11 @@
+---
+export interface Props {
+	subtitle: string;
+}
+
+const { subtitle } = Astro.props;
+---
+<div class="p-3 bg-info-subtle text-info text-center">
+  <h1>AltiesGamingStudios</h1>
+  <p>{subtitle}</p> 
+</div>

@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/AGS.astro';
+import Footer from '../../components/AGS/Footer.astro';
+import Header from '../../components/AGS/Header.astro';
+---
+
+<Layout title="Home">
+	<Header 
+		subtitle="Home"
+	/>
+	
+	<nav class="navbar navbar-expand-sm bg-dark-subtle navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="./">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./AG">AltiesGaming</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./AGL">AltiesGamingLive</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						More
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="./FEAT">Featured content</a></li>
+						<li><a class="dropdown-item" href="./FAQ">FAQ</a></li>
+						<li><a class="dropdown-item" href="./Discord">Discord</a></li>
+						<li><a class="dropdown-item" href="./Retired">Retired Content</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/">Hub</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="mt-4">Main Pages</h3>
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="./AG">AltiesGaming</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./AGL">AltiesGamingLive</a>
+						</li>
+				</ul>
+				<hr class="d-sm-none">
+				<div class="ratio ratio-1x1 clearfix">
+					<iframe src="https://ptb.discord.com/widget?id=757341031741128802&theme=dark" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+			</div>
+			</div>
+			<div class="col-sm-8">
+				<h2>About AGS</h2>
+				<h5>About AltiesGamingStudios</h5>
+				<p>We are a small media studio.</p>
+				<p>we mostly make videos, of which are on gaming, though we also do <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="cough cough, a lot">some </span><span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="exibit A; this website :)">website building</span>, and some other stuff.</p>
+	
+				<h2 class="mt-5">Channels</h2>
+				<h5>All of these channels are owned by AGS</h5>
+				<p>For partnered channels (edited/ran by us or FYTS) check the Partners page</p>
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-secondary">
+						<div class="row">
+							<div class="col-4">Channel <span class=" top-0 float-end badge rounded-pill bg-danger">Sub Count</span></div>
+							<div class="col-4">Channel disc</div>
+							<div class="col-4">To the Channel</div>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<div class="row">
+							<div class="col-4">AltiesGaming <span class=" top-0 float-end badge rounded-pill bg-danger" id="AGsubs">API Unavailable</span></div>
+							<div class="col-4">Main Channel, Mostly Minecraft Content</div>
+							<div class="col-4">
+								<div class="btn-group" role="group">
+									<a class="btn btn-info" href="./AG">Page</a>
+									<a class="btn btn-dark">|</a>
+									<a class="btn btn-youtube" href="https://www.youtube.com/@altiesgaming">YouTube</a>
+							</div>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-success">
+						<div class="row">
+							<div class="col-4">AltiesGamingLive <span class=" top-0 float-end badge rounded-pill bg-danger" id="AGLsubs">API Unavailable</span></div>
+							<div class="col-4">Live Channel, Live Stream, VODS, and misc. channel</div>
+							<div class="col-4">
+								<div class="btn-group" role="group">
+									<a class="btn btn-info" href="./AGL">Page</a>
+									<a class="btn btn-dark">|</a>
+									<a class="btn btn-youtube" href="https://www.youtube.com/@altiesgaminglive">YouTube</a>
+							</div>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-secondary">
+						<div class="row">
+							<div class="col-4">AltiesGaming's Twitch</div>
+							<div class="col-4">Twitch, gaming and some coding, all vods to to AltiesGamingLive</div>
+							<div class="col-4">
+								<div class="btn-group" role="group">
+									<a class="btn btn-info" href="./AGL">Page</a>
+									<a class="btn btn-dark">|</a>
+									<a class="btn btn-twitch" href="https://www.twitch.tv/altiesgaming">Twitch</a>
+							</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</div>
+	</div>
+	<br>
+	<div class="container-fluid text-center">
+		<h2>Recomended Videos</h2>
+		<div class="row">
+			<div class="col">
+				<h4>Altie's Gaming</h4>
+				<div class="ratio ratio-16x9">
+					<iframe src="https://www.youtube.com/embed/FZK13YrjThA" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col">
+				<h4>Altie's Gaming Live</h4>
+				<div class="ratio ratio-16x9">
+					<iframe src="https://www.youtube.com/embed/oN6P3SueMkM" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<script src="/JS/sub.js" is:inline></script>
+	<Footer />
+</Layout>
+<style>
+	.btn-youtube {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	.btn-twitch {
+		background-color: rgb(145, 70, 255);
+		color: rgb(0, 0, 0);
+	}
+</style>

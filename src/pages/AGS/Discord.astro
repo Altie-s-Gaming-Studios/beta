@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/AGS.astro';
+import Footer from '../../components/AGS/Footer.astro';
+import Header from '../../components/AGS/Header.astro';
+---
+
+<Layout title="Discord">
+	<Header 
+		subtitle="Discord"
+	/>
+	
+	<nav class="navbar navbar-expand-sm bg-dark-subtle navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="./">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./AG">AltiesGaming</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./AGL">AltiesGamingLive</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						More
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="./FEAT">Featured content</a></li>
+						<li><a class="dropdown-item" href="./FAQ">FAQ</a></li>
+						<li><a class="dropdown-item active" href="./Discord">Discord</a></li>
+						<li><a class="dropdown-item" href="./Retired">Retired Content</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/">Hub</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="mt-4">Main Pages</h3>
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="./AG">AltiesGaming</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./AGL">AltiesGamingLive</a>
+						</li>
+				</ul>
+				<hr class="d-sm-none">
+				<div class="ratio ratio-1x1 clearfix">
+					<iframe src="https://ptb.discord.com/widget?id=757341031741128802&theme=dark" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<h2>AltiesGamingStudios Discord</h2>
+				<br />
+				<h3>What is the invite link to the Discord server?</h3>
+        <p>You can click <a href="https://discord.gg/apuTdjRcXy">here</a> to join the discord server, or you can click on the "join Discord" button on the Discord widget to join the server!</p>
+				<h3>Server Rules</h3>
+				<p>Please look <a href="https://rules.altiesgamingstudios.com/">here</a> for the rules.</p>
+				<h3>Can I mod?</h3>
+				<p>At this moment we are not hiring mods, but you can send in an application <a href="modapplications.altiesgamingstudios.com">here</a>.</p>
+				<h3>I'm a mod, is there a site for mods?</h3>
+				<p>working on it, check the helper and employee discord server for any updates/the link</p>
+			</div>
+		</div>
+	</div>
+	<br />
+	<Footer />
+</Layout>
+<style>
+	.btn-youtube {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	.btn-twitch {
+		background-color: rgb(145, 70, 255);
+		color: rgb(0, 0, 0);
+	}
+</style>

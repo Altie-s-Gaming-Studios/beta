@@ -1,0 +1,86 @@
+---
+import Layout from '../../layouts/AGS.astro';
+import Footer from '../../components/AGS/Footer.astro';
+import Header from '../../components/AGS/Header.astro';
+---
+
+<Layout title="Retired Content">
+	<Header 
+		subtitle="Retired Content"
+	/>
+	
+	<nav class="navbar navbar-expand-sm bg-dark-subtle navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="./">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./AG">AltiesGaming</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./AGL">AltiesGamingLive</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						More
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="./FEAT">Featured content</a></li>
+						<li><a class="dropdown-item" href="./FAQ">FAQ</a></li>
+						<li><a class="dropdown-item" href="./Discord">Discord</a></li>
+						<li><a class="dropdown-item active" href="./Retired">Retired Content</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/">Hub</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="mt-4">Main Pages</h3>
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="./AG">AltiesGaming</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./AGL">AltiesGamingLive</a>
+						</li>
+				</ul>
+				<hr class="d-sm-none">
+				<div class="ratio ratio-1x1 clearfix">
+					<iframe src="https://ptb.discord.com/widget?id=757341031741128802&theme=dark" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+			</div>
+			</div>
+			<div class="col-sm-8">
+				<h2>Retired Content</h2>
+				<h6>What is Retired Content?</h6>
+				<p>Retired Content is altie's First channel started in 2017content that we no longer use/upload to/keep updated</p>
+				<h2>What is retired?</h2>
+				<p>2 things:</p>
+				<ul>
+					<li><code>AltiesGamingInfinite</code>, short lived, but it is, as of <code>june 27, 2023</code> it has been retired</li>
+					<li><code>AltiesGamingStudios</code> Guilded.gg server, unused, no one ever joined, as of <code>june 27, 2023</code> it has been retired</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br />
+	<Footer/>
+</Layout>
+<style>
+	.btn-youtube {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	.btn-twitch {
+		background-color: rgb(145, 70, 255);
+		color: rgb(0, 0, 0);
+	}
+</style>
