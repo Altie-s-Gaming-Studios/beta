@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Partners.astro';
+import Footer from '../../components/Partners/Footer.astro';
+import Header from '../../components/Partners/Header.astro';
+import Requirements_ from './requirements.md';
+---
+
+<Layout title="FYTS Requirements" description="AGS' FYTS program Partnerships requirements">
+	<Header 
+		subtitle="fellow youtubers and Twitch streamers program requirements"
+	/>
+  <div class="container">
+	<Requirements_ />
+  </div>
+	<Footer />
+</Layout>
+<style>
+	.btn-youtube {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	.btn-twitch {
+		background-color: rgb(145, 70, 255);
+		color: rgb(0, 0, 0);
+	}
+</style>

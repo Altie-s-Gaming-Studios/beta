@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Partners.astro';
+import Footer from '../../components/Partners/Footer.astro';
+import Header from '../../components/Partners/Header.astro';
+---
+
+<Layout title="Home" description="AGS' Partnerships">
+	<Header 
+		subtitle="Home"
+	/>
+	
+	<nav class="navbar navbar-expand-sm bg-dark-subtle navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="./">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./FYTS">FYTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="./AGL">Sponserships</a>
+				</li>
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						More
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="./FEAT">Featured content</a></li>
+						<li><a class="dropdown-item" href="./FAQ">FAQ</a></li>
+						<li><a class="dropdown-item" href="./Discord">Discord</a></li>
+						<li><a class="dropdown-item" href="./Retired">Retired Content</a></li>
+					</ul>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="/">Hub</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="mt-4">Main Pages</h3>
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="./">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./FYTS">FYTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="./AGL">Sponserships</a>
+					</li>
+				</ul>
+				<hr class="d-sm-none">
+			</div>
+			<div class="col-sm-8">
+				<h2>AGS Partnerships</h2>
+				<p>AGS partnerships are <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="'fellow youtubers and Twitch Streamers' program">FYTS members</span> and sponserships.</p>
+				<p>as of now we do not have any sponsers.</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<Footer />
+</Layout>
+<style>
+	.btn-youtube {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	.btn-twitch {
+		background-color: rgb(145, 70, 255);
+		color: rgb(0, 0, 0);
+	}
+</style>

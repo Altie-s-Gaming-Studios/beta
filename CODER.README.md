@@ -31,16 +31,26 @@ NO
 │   │   ├── sub-AG.js
 │   │   ├── sub-AGL.js
 │   │   └── sub.js
+│   ├── home-background.svg
+│   ├── Main-Favicon.png
 │   └── robots.txt
 ├── src/
 │   ├── components/
-│   │   ├──AGS/
-│   │   |  ├── Footer.astro
-│   │   |  └── Header.astro
+│   │   ├── AGS/
+│   │   │   ├── Footer.astro
+│   │   │   └── Header.astro
+│   │   ├── Moonrise/
+│   │   │   ├── Footer.astro
+│   │   │   └── Header.astro
+│   │   ├── Partners/
+│   │   │   ├── Footer.astro
+│   │   │   └── Header.astro
 │   │   └── placeholder
 │   ├── layouts/
 │   │   ├── AGS.astro
-│   │   └── main.astro
+│   │   ├── main.astro
+│   │   ├── Moonrise.astro
+│   │   └── Partners.astro
 │   └── pages/
 │       ├── AGS/
 │       │   ├── AG.astro
@@ -50,6 +60,13 @@ NO
 │       │   ├── FEAT.astro
 │       │   ├── index.astro
 │       │   └── Retired.astro
+│       ├── Moonrise/
+│       │   └── index.astro
+│       ├── Partners/
+│       │   ├── FYTS.astro
+│       │   ├── index.astro
+│       │   ├── requirements.astro
+│       │   └── requirements.md
 │       ├── index.astro
 │       └── 404.astro
 └── package.json
@@ -57,8 +74,8 @@ NO
 
 # Refrence Guide:
 ## images:
-all images are stored in "<code>/public/imgs/</code>"  
-to use these images use "<code>imgs/{name of image}</code>" or "<code>imgs/ESRB_Imgs/{rating}</code>"
+most images are stored in "<code>/public/imgs/</code>"  
+to use these images use "<code>imgs/{name of image}</code>" or "<code>imgs/ESRB_Imgs/{rating}</code>"  
 ## Sites:
 here are refrences for all of the websites:
 ### Root
@@ -86,3 +103,20 @@ here are refrences for all of the websites:
 * AGS/Retired.astro -->
   * out of folder "<code>AGS</code>" /AGS/Retired
   * in folder "<code>AGS</code>" ./Retired
+### Moonrise/
+* Moonrise/index.astro -->
+  * out of folder "<code>Moonrise</code>" /Moonrise
+  * in folder "<code>Moonrise</code>" ./
+### Partners/
+* Partners/FYTS.astro -->
+  * out of folder "<code>Partners</code>" /Partners/FYTS
+  * in folder "<code>Partners</code>" ./FYTS
+* Partners/index.astro -->
+  * out of folder "<code>Partners</code>" /Partners
+  * in folder "<code>Partners</code>" ./
+* Partners/requirements.astro -->
+  * out of folder "<code>Partners</code>" /Partners/requirements
+  * in folder "<code>Partners</code>" ./requirements
+* Partners/requirements.md (only for ```import```s) -->
+  * out of folder "<code>Partners</code>" /Partners/requirements.md
+  * in folder "<code>Partners</code>" ./requirements.md
