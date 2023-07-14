@@ -1,9 +1,11 @@
 ---
 export interface Props {
 	title: string;
+	description: string;
 }
 
 const { title } = Astro.props;
+const { description } = Astro.props;
 const full_title = title + ' | AGS'
 ---
 
@@ -16,9 +18,9 @@ const full_title = title + ' | AGS'
 		<!-- sitemap, favicon, title, and metadata -->
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image" href="/imgs/AltiesGamingLogo.png" />
+		<link rel="icon" type="image" href="/Main-Favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{full_title}</title>
 	</head>
